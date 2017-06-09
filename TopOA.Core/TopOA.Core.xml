@@ -4,5 +4,26 @@
         <name>TopOA.Core</name>
     </assembly>
     <members>
+        <member name="T:TopOA.Core.ICommandHandler`1">
+            <summary>
+            A command handler inherits from this interface. It can be exposed to consumers, or it can serve as a reminder to implement Execute(TCommand) then
+            pull it up to a specific interface.
+            </summary>
+        </member>
+        <member name="T:TopOA.Core.IQueryHandler`2">
+            <summary>
+            A reader (query handler) inherits from this interface. It can be exposed to consumers, or it can serve as a reminder to implement Query(TQuery) then
+            pull it up to a specific interface.
+            </summary>
+        </member>
+        <member name="T:TopOA.Core.IValidator`1">
+            <summary>
+            A reader or command handler inherits from this interface. It can be exposed to consumers, or it can serve as a reminder to implement Validate(T) then
+            pull it up to a specific interface.
+            </summary>
+        </member>
+        <member name="M:TopOA.Core.IValidator`1.Validate(`0)">
+            <summary>Returns UserSettingsLogEventId.NoError iff the command or query passes validation.</summary>
+        </member>
     </members>
 </doc>
