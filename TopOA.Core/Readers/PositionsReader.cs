@@ -1,17 +1,15 @@
-﻿using System;
-
-namespace TopOA.Core.Readers
+﻿namespace TopOA.Core.Readers
 {
     public class PositionsReader : IQueryHandler<PositionsQuery, PositionsList>, IValidator<PositionsQuery>
     {
         public PositionsList Query(PositionsQuery query)
         {
-            throw new NotImplementedException();
+            return new PositionsList();
         }
 
         public ErrorCode Validate(PositionsQuery commandOrQuery)
         {
-            throw new NotImplementedException();
+            return ErrorCode.NoError;
         }
     }
 }

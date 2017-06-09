@@ -1,6 +1,7 @@
 ﻿namespace TopOA.Core
 {
-    public class ErrorCode
+    public enum ErrorCode
     {
+        NoError = 0
     }
 }
