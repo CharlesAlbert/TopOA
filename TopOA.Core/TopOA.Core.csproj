@@ -15,5 +15,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>TopOA.Core.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TopOA.Core.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Readers\" />
+  </ItemGroup>
   
 </Project>
