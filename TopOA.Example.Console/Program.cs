@@ -12,7 +12,7 @@ namespace TopOA.Example.Console
         /// <summary>The 24-hour token from the developer portal.</summary>
         private const string Token = "eyJhbGciOiJFUzI1NiIsIng1dCI6IkQ0QUU4MjQ2RDYyNTBFMTY5Njg4NDFCREY4Nzc2MTI4NUMwNUJCMUYifQ.eyJvYWEiOiI3Nzc3MCIsImlzcyI6Im9hIiwiYWlkIjoiMTA5IiwidWlkIjoianpkR0Zmc2tjV2lhUHVSZ0pXdVRZZz09IiwiY2lkIjoianpkR0Zmc2tjV2lhUHVSZ0pXdVRZZz09IiwiaXNhIjoiRmFsc2UiLCJ0aWQiOiIyMDAyIiwic2lkIjoiZDIwYTVlZmFhYjVlNDVjNmEzMTIyMzZiMzJhNDI5MDkiLCJkZ2kiOiI4NCIsImV4cCI6IjE0OTcwODM5NzAifQ.Q_gg9WMKMdGmw2D_X6TGVEz9Rni7X5TK_5jGNGJS6Gj9d-k_WXLZOZfzh1gtNtgSX-caeFjR_k6HlYx20e7ApQ";
 
-        static void Main(string[] _)
+        private static void Main()
         {
             // Use the .Net Core DI container:
             IServiceProvider serviceProvider = new DefaultCompositionRoot().Initialize();
