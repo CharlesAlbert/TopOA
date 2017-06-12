@@ -3,11 +3,11 @@ configuration: Release
 platform: Any CPU
 build_script:
 - cmd: Build.cmd
-artifacts:
-- path: TopOA.Core\bin\Release\TopOA.Core.0.1.0.nupkg
 environment:
   matrix:
     - CLI_VERSION: Latest
+artifacts:
+  - path: '**\*.nupkg'
 branches:
   only:
     - master
