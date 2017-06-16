@@ -21,3 +21,12 @@ For example, in order to log on, then read a list of all positions, do this,
 ```
 
 Validation and DI container setup has been omitted in the above snippet. The full examples are included in the repository.
+
+## Deployment
+The latest build (from the latest push to master on GitHub) is available on myGet.org,
+ - https://www.myget.org/F/belgaard-ci/api/v3/index.json
+ 
+Officially released builds are available on nuGet.org,
+ - https://api.nuget.org/v3/index.json
+ 
+ Note that at the time of writing this project is at version 0.1.x and there is no officially released build on nuGet.org yet.
